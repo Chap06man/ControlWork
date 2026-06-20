@@ -1,3 +1,5 @@
+# 1. ИНКАПСУЛЯЦИЯ
+
 class Person:
     def __init__(self):
         self.__age = None  
@@ -10,6 +12,9 @@ class Person:
 
     def get_age(self):
         return self.__age
+
+
+# 2. НАСЛЕДОВАНИЕ
 
 class Animal:
     def __init__(self, name):
@@ -28,6 +33,9 @@ class Cat(Animal):
     def speak(self):
         return "Meow"
 
+
+# 3. ПОЛИМОРФИЗМ
+
 class Vehicle:
     def move(self):
         return "Vehicle is moving"
@@ -45,6 +53,8 @@ class Bicycle(Vehicle):
 
 def move(vehicle):
     return vehicle.move()
+
+# 4. АБСТРАКЦИЯ
 
 from abc import ABC, abstractmethod
 
